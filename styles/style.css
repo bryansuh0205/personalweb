@@ -1,0 +1,81 @@
+:root {
+  --clr-dark: #00202e;
+  --clr-light: #dcd0c3;
+  --clr-slate400: #cec1b3;
+  --clr-slate600: #c0b1a2;
+  --clr-slate800: #b2a292;
+  --clr-rose: #bac5e0;
+  --clr-grey: #bac7cf;
+  --clr-black: #000000;
+  /* sky rgb(14, 165, 233) */
+  /* indigo rgb(186, 199, 207) */
+  /* black rgb(0, 0, 0) */
+
+  /* sizes */
+  /* from tailwind css */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em+0.5rem);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.light-mode {
+  --clr-light: #00202e;
+  --clr-dark: #dcd0c3;
+  --clr-slate400: #000000;
+  --clr-slate600: #000000;
+  --clr-slate800: #000000;
+}
+
+body {
+  font-family: 'General Sans', sans-serif;
+  background-color: var(--clr-dark);
+  color: var(--clr-light)
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 100;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: var(--clr-rose);
+}
+
+strong {
+  color: var(--clr-indigo);
+}

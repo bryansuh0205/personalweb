@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+    <title>Bryan's Portfolio</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+              <button id="theme-toggle" class="header__sun">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+              </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="./public/BryanSuhResume_LinkedIn(2024).pdf" target="blank">RESUME</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
+        </button>
+      </nav>
+    </header>
+    <!--mobile navigation-->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+          </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="/BryanSuhResume_LinkedIn(2024).pdf" target="blank">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--End of mobile navigation-->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="./public/hero.jpg" alt="profile picture" />
+        <h2 class="hero__subtitle">Hi, Im Bryan ✌️</h2>
+        <h1 class="her__title">JUNIOR SOFTWARE<br> ENGINEER.</h1>
+        <p class="hero__description">An aspiring <strong>Software Engineer</strong> and a newly graduated <strong>Computer Science</strong> major specializing in backend applications.</p>
+        <a class="hero__btn btn" href="#contact">Reach Out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">Hello! I'm Bryan, an aspiring <strong>Software Engineer</strong> based in Georgia. I enjoy building applications that benefit people in any shape or form.</p>
+          <p class="about__description">I thrive on challenges and constantly seek opportunities to develop new skills and deepen my knowledge, as I believe there's always room to grow professionally and personally.</p>
+          <p class="about__description"> I am a recent graduate from Georgia State University with a Bachelors of Computer Science.</p>
+          <hr class="about__hr">
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__skill">
+              <li class="about__list">Java</li>
+              <li class="about__list">Python</li>
+              <li class="about__list">PostgreSQL</li>
+            </ul>
+            <ul class="about__skill">
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img class="about__img lazy loading" src="https://fakeimg.pl/750x563" data-src="/about.jpg" alt="about img" />
+         </div>
+      </section>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Music Database</h2>
+          <a class="featured__link"></a>
+        </div>
+        <p class="featured__description">The designed database is a music streaming and management system that allows users to browse, search, and play songs, create playlists, view their play history, and manage their subscription status. The database can be used by music enthusiasts who want to easily access their favorite songs and playlists from anywhere at any time. It can also be used by music streaming service providers who want to provide their users with a seamless and intuitive music streaming and management experience.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">PostgreSQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project type</h3>
+            <p class="featured__info">Database</p>
+          </div>
+          <div>
+            <h3 class="featured__label">timeline</h3>
+            <p class="featured__info">Aug 2023 - Dec 2023</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1131x636" data-src="/ERmod.png" alt="ER model" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1600x900" data-src="/relationalMod.png" alt="relational model" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/917x516" data-src="/tripleObj.png" alt="relationship with three objects connected" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1213x682" data-src="/func8.png" alt="function 8" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1301x732" data-src="/func9.png" alt="function 9" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1133x637" data-src="/func11.png" alt="function 11" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1131x636" data-src="/func13.png" alt="function 13" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1390x782" data-src="/func15.png" alt="function 15" />
+          </div>
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">The following projects were made with a team. We coordinated and communicated effectively to achieve the goal to make a product within a certain amount of time. </p>
+        <div class="work__container">
+          <!-- project 1-->
+          <h3 id="PropertyHub" class="work__project-title">PropertyHub</h3>
+          <div class="work__img-wrapper work__image1">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x878" data-src="/PropertyHub.png" alt="PropertyHub website" />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">PropertyHub</h3>
+            <p class="work__project-description1">This website was a group project made from Jan 2023 - May 2023. we used php to connect to a local mySQL database, so the login and signup will not work, as the website is not currently connected to an online database.</p>
+            <p class="work__project-description2">Making buying and selling easy. Our customers can view available properties and sell in the comfort of their own homes! <br/>I was responsible for the search bar functionality and validating the functionality works with the local MySQL database.
+            </p>
+            <a class="btn work__project-btn" href="./PropertyHub/buyer.html">Website</a>
+          </div>
+          <!-- project 2-->
+          <h3 id="Attend-in" class="work__project-title">Attend-in</h3>
+          <div class="work__img-wrapper work__image2">
+            <img class="lazy loading" src="https://fakeimg.pl/1000x562" data-src="/Attend-in.png" alt="Attend-in website" />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Attend-in</h3>
+            <p class="work__project-description1">This website was a group project made from Aug 2023 - Dec 2023. we used a flask+react+PostgreSQL framework. We used a local SQL database, therefore the website is not able to work. </p>
+            <p class="work__project-description2">
+              For teachers and school systems to use for more ease of attendance taking. Teachers will have a better alternative to manual attendance taking and have more of their valuable time teaching future professionals the knowledge they need.<br/>
+              I was responsible for the creation of the PostGreSQL database and all of the login/sign and attendance taking functionalities.
+            </p>
+            <a class="btn work__project-btn" href="https://github.com/bryansuh0205/Attend-In">GitHub</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Lets Connect!</h2>
+        <p class="contact__description"> If you have  business inquiries, questions, or just want to chat, my inbox is open! Feel free to reach out to me and I will get back to you as soon as possible.</p>
+        <a class="contact__btn btn" href="mailto:bryanlsuh@gmail.com" target="blank">Contact Me</a>
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">- Bryan Suh -</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+    </article>
+  </body>
+</html>
